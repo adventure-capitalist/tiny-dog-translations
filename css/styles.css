@@ -326,9 +326,25 @@ screen and (max-width: 700px) {
   }
   p {
     font-size: 3vw;
+    width: auto;
   }
 }
+/*ServiceLevels*/
+#main {
+  background-color: #2D775F;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.Subsection {
+  color: #FFDAA0;
+}
+
+.blabber {
+  width: 90%;
+  text-align: left;
+  padding: 5%;
+}
 /*FOOTER*/
 
 footer {
@@ -449,7 +465,7 @@ screen and (max-width: 700px) {
 #prompt {
   text-align: center;
   width: 85%;
-  color: #5C6084;
+  color: #FFDAA0;
   padding: 0;
 }
 #contact-prompt {
@@ -458,10 +474,25 @@ screen and (max-width: 700px) {
   flex-direction: row;
   justify-content: center;
 }
-
+#form {
+  background-color: #5C6084;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form {
+  justify-content: space-between;
+  padding:1%;
+}
+.job {
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
 input[type=text], select, textarea {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
+  width: 98%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -469,6 +500,7 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  justify-content: left;
   }
 
 #submit-button{
@@ -484,8 +516,10 @@ input[type=text], select, textarea {
 
   label {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    text-align: right;
   }
-  
+
   input[type=submit] {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #D66546;
