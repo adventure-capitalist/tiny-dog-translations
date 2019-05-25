@@ -39,22 +39,29 @@
       <link rel="stylesheet" type="text/css" href="contactus.css">
     </head>
     <div class="container">
-  <form action="contactus.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your forename...">
-<br>
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your surname...">
-<br>
-    <label for="email">Email<span></label>
-    <input type="text" id="email" name="email" placeholder="Your email address...">
-<br>
-    <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Help me help you..." style="height:200px"></textarea>
-    <div id="submit-button"><input type="submit" value="Submit"></div>
-<br>
-  </form>
+      <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your forename...">
+          </p>
+          <p>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your surname...">
+        </p>
+        <p>
+            <label for="email">Email<span></label>
+            <input type="text" id="email" name="email" placeholder="Your email address...">
+        </p>
+        <p>
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Help me help you..." style="height:200px"></textarea>
+            <div id="submit-button"><input type="submit" value="Submit"></div>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+    </form>
 </div>
 </div>
 <hr class="break">
@@ -83,6 +90,14 @@
           <!-- FOOTER -->
         <hr class="break">
           <footer>
+            <script src="https://www.google.com/recaptcha/api.js?render=6Lf6cKUUAAAAAGPrlfu0sueDZ-ntpcVrFCguzoKf"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6Lf6cKUUAAAAAGPrlfu0sueDZ-ntpcVrFCguzoKf', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
             <div class="footer-right">
               <p><a href="#">Back to top</a></p>
               <a href="#" class="#" </a>
