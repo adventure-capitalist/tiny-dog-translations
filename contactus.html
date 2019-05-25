@@ -1,99 +1,70 @@
-<!DOCTYPE html>
-<!--This website was lovingly crafted by Ashley Mikkola as a gift to her friend, colleague and best bud Lauren Reed. May it serve her well and grow with her through life -->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
-  <title> TINYDOG </title>
-  </head>
-<!-- NAVBAR -->
-  <body>
-    <container id="navigation">
-        <nav>
-          <ul class="navbar" width="100%">
-            <li class="nav-item"><a class="nav-link" href="index.html">WELCOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/lauren-reed-85125b81/" target="_blank">LinkedIn</a></li>
-          </ul>
-        </nav>
-      </container>
-<!--BANNER -->
-<div class="banner">
-    <img id="logo" src="./css/images/LOGO.png" alt="TINYDOG spelled in scrabble tiles" width="100%">
-  </div>
-
-    <div class="company-name">
-      <h1>Playing with language.</h1>
-    </div>
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+title: Contact Us
+layout: page
+---
+<div class="company-name">
+  <h1>Playing with language.</h1>
+</div>
 <hr class="break">
 <div id="form">
   <h2 class="job">German to English Language Services Provider</h2>
-    <div id="contact-prompt"> <p id="prompt">Do you need a helping hand? We're happy to lend one.<br>Just let us know how we can reach you below.</p> </div>
-    <style> p1 {font-size: 6px;  margin-bottom: 20px;} </style>
-    <div class="container">
+  <div id="contact-prompt">
+    <p id="prompt">Do you need a helping hand? We're happy to lend one.<br>Just let us know how we can reach you below.</p>
+  </div>
+  <style>
+    p1 {
+      font-size: 6px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <div class="container">
 
-      <form name="contact" method="POST" data-netlify="true">
-          <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your forename...">
-          </div>
-          <div>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your surname...">
-        </div>
-        <div>
-            <label for="email">Email<span></label>
-            <input type="text" id="email" name="email" placeholder="Your email address...">
-        </div>
-        <div>
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Help me help you..." style="height:200px"></textarea>
-        </div>
-          <div id="submit-button"><input type="submit" value="Submit"></div>
+    <form name="contact" method="POST" data-netlify="true">
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your forename...">
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your surname...">
+      </div>
+      <div>
+        <label for="email">Email<span></label>
+        <input type="text" id="email" name="email" placeholder="Your email address...">
+      </div>
+      <div>
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Help me help you..." style="height:200px"></textarea>
+      </div>
+      <div id="submit-button"><input type="submit" value="Submit"></div>
     </form>
-</div>
+  </div>
 </div>
 <hr class="break">
-      <!--Service Offerings -->
-          <container id="service-offerings">
-            <div class="service">
-              <img class="img-circle" src="./css/images/Proofreading.png" alt="checkmark on a scrabble tile"/>
-                <h2>Proofreading</h2>
-                  <h3>Winning quality.</h3>
-                    <button class="button" type="button"><a class="button-link" href="ServiceLevels.html">Tell me more</a></button>
-            </div>
-            <div class="service">
-              <img class="img-circle" src="./css/images/Translation.jpg" alt="japanese script on scrabble tiles"/>
-                <h2>Translation</h2>
-                  <h3>Double language score.</h3>
-                    <button class="button" type="button"><a class="button-link" href="ServiceLevels.html">Tell me more</a></button>
-            </div>
-            <div class="service">
-              <img class="img-circle" src="./css/images/transcreation.jpg" alt="pile of blank scrabble tiles"/>
-                <h2>Transcreation</h2>
-                  <h3>Total game changer.</h3>
-                    <button class="button" type="button"><a class="button-link" href="ServiceLevels.html">Tell me more</a></button>
-            </div>
-          </container>
+<!--Service Offerings -->
+<container id="service-offerings">
+  <div class="service">
+    <img class="img-circle" src="./images/Proofreading.png" alt="checkmark on a scrabble tile" />
+    <h2>Proofreading</h2>
+    <h3>Winning quality.</h3>
+    <button class="button" type="button"><a class="button-link" href="ServiceLevels.html">Tell me more</a></button>
+  </div>
+  <div class="service">
+    <img class="img-circle" src="./images/Translation.jpg" alt="japanese script on scrabble tiles" />
+    <h2>Translation</h2>
+    <h3>Double language score.</h3>
+    <button class="button" type="button"><a class="button-link" href="ServiceLevels.html">Tell me more</a></button>
+  </div>
+  <div class="service">
+    <img class="img-circle" src="./images/transcreation.jpg" alt="pile of blank scrabble tiles" />
+    <h2>Transcreation</h2>
+    <h3>Total game changer.</h3>
+    <button class="button" type="button"><a class="button-link" href="ServiceLevels.html">Tell me more</a></button>
+  </div>
+</container>
 
-          <!-- FOOTER -->
-        <hr class="break">
-          <footer>
-
-  </script>
-            <div class="footer-right">
-              <p><a href="#">Back to top</a></p>
-              <a href="#" class="#" </a>
-            </div>
-            <div  class="footer-left">
-              <p>&copy; TINYDOG 2018 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </div>
-          </footer>
-
-      </body>
-  </html>
+<!-- FOOTER -->
+<hr class="break">
+<footer>
